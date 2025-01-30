@@ -1,11 +1,11 @@
  * {
-        border: 2px solid green;
+        border: 2px solid lightblue;
    margin: 0;
      padding: 0;
       box-sizing: border-box;
  }
       body {
-        background-color: goldenrod;
+        background-color: lightblue;
         font-family: Georgia, 'Times New Roman', Times, serif;
  
         display: flex;
@@ -17,7 +17,7 @@
 }
 
 nav, footer {
-       background-color : red;
+       background-color : silver;
         padding: 20px; 
         color : blue;
         text-align: center;
