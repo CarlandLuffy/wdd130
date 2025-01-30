@@ -1,15 +1,52 @@
-styles.css >
-body {
-        background-color: lightblue;
+ * {
+        border: 2px solid green;
+   margin: 0;
+     padding: 0;
+      box-sizing: border-box;
+ }
+      body {
+        background-color: goldenrod;
         font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
 }
 
-a{
-        padding: 15px;       
-        color: gold;
+nav, footer {
+       background-color : red;
+        padding: 20px; 
+        color : blue;
+        text-align: center;
+        width: 100%;
+}
+nav a {
+        padding : 15px;
         font-size: 20px;
-}      
-
-img {
-        width: 400px;
+        text-decoration: none;
+        color: blue;
+        margin: 10px;
 }
+       nav a:hover {
+        background-color: blue;
+        color : green;
+}
+ h1 {
+        text-align: center;
+      }     
+img {
+         width: 400px;
+      display : block;
+        margin: 20px auto;
+}
+ main-topic {
+    color: blue;
+    text-align : center;
+ }
+footer a {
+        color: black;
+}
+   
