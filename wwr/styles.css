@@ -1,24 +1,32 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #e0e0e0; 
     color: #333;
     margin: 0;
     padding: 0;
 }
 
+
 #content {
     max-width: 1600px;
-    margin: 0 auto;
-    background-color: white;
+    margin: 40px auto; 
+    background-color: white; 
+    padding: 20px;
+    box-shadow: 0px 0px 15px white; 
+    border-radius: 10px; 
 }
 
-/* ✅ Align Dry Oar Logo and Navigation to the Left */
+
+
 header {
     background-color: #5a5f50;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align everything to the left */
+    justify-content: flex-start;
     padding: 10px 20px;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 6px;
 }
 
 #header-container {
@@ -41,7 +49,7 @@ header {
 }
 
 nav {
-    margin-left: 20px; /* Keep navigation close to the logo */
+    margin-left: 20px; 
     background-color: #5a5f50;
     text-align: left;
     padding: 10px;
@@ -58,7 +66,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* ✅ Keep Hero Image Properly Positioned */
+
 #hero {
     position: relative;
     text-align: center;
@@ -70,14 +78,14 @@ nav a:hover {
 }
 
 #hero-img {
-    width: 100%;
-    max-width: 1200px;
+    width: 2000%;
+    max-width: 1400px;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin-left: 500px; 
 }
 
-/* ✅ Fix "Book Now" Placement (Below Hero Image) */
+
 #hero-msg {
     text-align: center;
     margin-top: 20px;
@@ -98,7 +106,7 @@ nav a:hover {
     color: black;
 }
 
-/* ✅ Make Sure Cards Are Centered */
+
 .home-grid {
     display: flex;
     flex-direction: column;
@@ -115,7 +123,7 @@ nav a:hover {
     margin: auto;
 }
 
-/* ✅ Fix Icons to Be on the Right Side of Images */
+
 .image-container {
     position: relative;
     display: flex;
@@ -125,20 +133,20 @@ nav a:hover {
 
 .icon {
     position: absolute;
-    right: -60px; /* Push to the right */
+    right: -60px; 
     top: 50%;
     transform: translateY(-50%);
-    width: 80px; /* ✅ Increase size */
+    width: 80px; 
 }
 
-/* ✅ Restore the Orange Background at the Bottom */
+
 #background {
     height: 800px;
     background-color: #c7a785;
     width: 100%;
 }
 
-/* ✅ Restore Message Section */
+
 .msg {
     text-align: center;
     background-color: #5a5f50;
@@ -153,7 +161,7 @@ nav a:hover {
     color: white;
 }
 
-/* ✅ Make "Pull Up Please" Button Stand Out */
+
 .join {
     background-color: #FFA500;
     color: black;
@@ -168,10 +176,10 @@ nav a:hover {
     background-color: #FF8C00;
 }
 
-/* ✅ Restore Footer */
+
 footer {
     background-color: #5a5f50;
-    color: white;
+    color: orange;
     text-align: center;
     padding: 15px;
     margin-top: 0;
@@ -196,3 +204,13 @@ footer a:hover {
     width: 30px;
     margin: 5px;
 }
+
+.mountains {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    position: relative;
+    left: -500px; 
+}
+
