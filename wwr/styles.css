@@ -24,7 +24,7 @@ header {
     align-items: center;
     justify-content: flex-start;
     padding: 10px 20px;
-    width: 60%;
+    width: 200%;
     margin: 0 auto;
     border-radius: 6px;
 }
@@ -82,7 +82,7 @@ nav a:hover {
     max-width: 1400px;
     height: auto;
     display: block;
-    margin-left: 500px; 
+    margin-left: -5px; 
 }
 
 
