@@ -1,35 +1,38 @@
-body { 
+body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
-    color: #333; 
-    margin: 0; 
-    padding: 0; 
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
     background-color: white;
 }
 
+/* ✅ Align Dry Oar Logo and Navigation to the Left */
 header {
-    background-color: #5a5f50; 
+    background-color: #5a5f50;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: flex-start; /* Align everything to the left */
     padding: 10px 20px;
 }
 
-
+#header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
 
 #logo_link {
     background-color: #5a5f50;
-    padding: 5px 10px;
+    padding: 10px;
     display: flex;
-    align-items: left;
-    justify-content: left;
-    margin: 0; 
-  }
-
+    align-items: center;
+}
 
 .logo {
     display: block;
@@ -37,67 +40,65 @@ header {
     height: auto;
 }
 
-nav { 
-    margin-left: auto; 
+nav {
+    margin-left: 20px; /* Keep navigation close to the logo */
     background-color: #5a5f50;
     text-align: left;
-    padding: 10px; 
-    
+    padding: 10px;
 }
-nav a { 
+
+nav a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    margin: 0 15px; 
+    margin: 0 15px;
 }
+
 nav a:hover {
     text-decoration: underline;
 }
-#hero { 
+
+/* ✅ Keep Hero Image Properly Positioned */
+#hero {
     position: relative;
     text-align: center;
- }
-#hero-box { 
-        width: 100%;
-        height: auto;
 }
-#hero-msg { 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255,255,255,0.7);
-    padding: 20px;
-    border-radius: 10px;
+
+#hero-box {
+    width: 100%;
+    height: auto;
+}
+
+#hero-img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ✅ Fix "Book Now" Placement (Below Hero Image) */
+#hero-msg {
     text-align: center;
-    width: 50%;
-}
-.home-title { 
-    font-size: 2em;
-    font-weight: bold;
-    color: black;
-}
-.button-box {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .book {
-    background-color: #FFA500; 
-    color: black; 
+    background-color: #FFA500;
+    color: black;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
     display: inline-block;
-    font-weight: bold; 
+    font-weight: bold;
 }
-
 
 .book:hover {
-    background-color: #FF8C00; 
-    color: black; 
+    background-color: #FF8C00;
+    color: black;
 }
 
-
+/* ✅ Make Sure Cards Are Centered */
 .home-grid {
     display: flex;
     flex-direction: column;
@@ -107,7 +108,6 @@ nav a:hover {
     width: 80%;
 }
 
-
 .rivers-card, .camping-card, .rapids-card {
     text-align: center;
     position: relative;
@@ -115,66 +115,48 @@ nav a:hover {
     margin: auto;
 }
 
-
+/* ✅ Fix Icons to Be on the Right Side of Images */
 .image-container {
     position: relative;
-    display: inline-block;
-}
-
-
-
-.section-icon {
-    position: absolute;
-    top: 50%;
-    right: -50px; 
-    transform: translateY(-50%);
-    width: 10px; 
-    height: 80px; 
-}
-
-    
-
-
-
-
-
-
-.card-img {
-    width: 100%;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon {
-    width: 40px;
-    margin-top: 10px;
+    position: absolute;
+    right: -60px; /* Push to the right */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px; /* ✅ Increase size */
 }
 
-
+/* ✅ Restore the Orange Background at the Bottom */
 #background {
     height: 800px;
-    background-color: #c7a785; 
-    width: 120%;
+    background-color: #c7a785;
+    width: 100%;
 }
 
-
+/* ✅ Restore Message Section */
 .msg {
     text-align: center;
-    background-color: #5a5f50; 
-    color: white; 
+    background-color: #5a5f50;
+    color: white;
     padding: 20px;
-    width: 105%;
+    width: 80%;
     margin: 0 auto;
-    border-radius: 10px; /
+    border-radius: 10px;
 }
 
 .msg h2, .msg p {
-    color: white; 
+    color: white;
 }
 
-
+/* ✅ Make "Pull Up Please" Button Stand Out */
 .join {
-    background-color: #FFA500; 
-    color: black; 
+    background-color: #FFA500;
+    color: black;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -182,17 +164,14 @@ nav a:hover {
     font-weight: bold;
 }
 
-
 .join:hover {
-    background-color: #FF8C00; 
+    background-color: #FF8C00;
 }
 
-
-
-
+/* ✅ Restore Footer */
 footer {
     background-color: #5a5f50;
-    color: orange;
+    color: white;
     text-align: center;
     padding: 15px;
     margin-top: 0;
@@ -201,17 +180,13 @@ footer {
 footer a {
     color: #FFA500;
     text-decoration: none;
-    font-weight: bold; 
+    font-weight: bold;
 }
-
 
 footer a:hover {
     text-decoration: underline;
     color: #FF8C00;
 }
-
-
-
 
 .social {
     margin-top: 10px;
@@ -219,20 +194,5 @@ footer a:hover {
 
 .social img {
     width: 30px;
-    margin: 5px;   
-}
-
-#hero-img {
-    width: 80%; 
-    height: auto;
-    max-width: none; 
-    transform: translate(-12%);
-}
-
-.mountains {
-    width: 50%;
-    display: block;
-    margin-right: auto; 
-    transform: translateX(-25%); 
-
+    margin: 5px;
 }

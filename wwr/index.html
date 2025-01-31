@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whitewater Rafting Vacations | Dry Oar Boating | Home</title>
-    <link href="styles.css" rel="stylesheet"> 
+    <link href="styles.css" rel="stylesheet">
+</head>
 <body>
     <header>
         <a id="logo_link" href="index.html">
@@ -23,14 +24,16 @@
         <div id="hero-box">
             <img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting">
         </div>
-        <section id="hero-msg">
-            <h1 class="home-title">Have An Adventure</h1>
-            <h4>Make Memories with Dry Oar</h4>
-            <div class='button-box'>
-                <a class='book' href="contactus.html">Book Now</a>
-            </div>
-        </section>
     </div>
+
+    <!-- ✅ "Book Now" is properly positioned below hero image -->
+    <section id="hero-msg">
+        <h1 class="home-title">Have An Adventure</h1>
+        <h4>Make Memories with Dry Oar</h4>
+        <div class='button-box'>
+            <a class='book' href="contactus.html">Book Now</a>
+        </div>
+    </section>
 
     <main class="home-grid">
         <section class="rivers-card">
@@ -51,8 +54,12 @@
             <h2>Rapids</h2>
         </section>
 
+        <!-- ✅ Ensuring Orange Background Below Rapids -->
+        <div id="background"></div>
+
         <img class="mountains" src="images/mountains.jpg" alt="Misty mountains">
 
+        <!-- ✅ Ensuring This Section Has the Correct Background Color -->
         <section class="msg">
             <h2>This is my life, do you want it to be yours?</h2>
             <p>I love nature and hanging out with my friends. This is the life I wished for as a kid – it's worth it!</p>
@@ -61,9 +68,9 @@
     </main>
 
     <footer>
-        <p>Dry Oar &copy; 2025 - Carl Hylton All rights reserved</p>
-        <p><a href="site-plan-rafting.html">Site Plan</a></p>
-        <p><a href="contactus.html">Contact Us</a></p>
+        <p class="footer-text">Dry Oar &copy; 2025 - Carl Hylton All rights reserved</p>
+        <p><a class="footer-link" href="site-plan-rafting.html">Site Plan</a></p>
+        <p><a class="footer-link" href="contactus.html">Contact Us</a></p>
 
         <div class="social">
             <a href="https://facebook.com" target="_blank">
