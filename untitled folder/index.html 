@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W05 ICE Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/w05_ice_image_graphic.png" alt="Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Design</a>
+            <a href="#">Principles</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div id="hero">
+        <div id="hero-box">
+            <img id="hero-img" src="images/w05_ice_image_graphic.png" alt="Hero Image">
+        </div>
+    </div>
+
+    <section id="hero-msg">
+        <h1 class="home-title">Web Design Principles</h1>
+        <h4>Creating Engaging Digital Experiences</h4>
+        <div class='button-box'>
+            <a class='book' href="#">Learn More</a>
+        </div>
+    </section>
+
+    <main class="home-grid">
+        <section class="design-card">
+            <img class="card-img" src="images/w05_ice_image_desk.jpg" alt="Desk setup">
+            <img class="icon" src="images/w05_circles.jpg" alt="Circles icon">
+            <h2>Design</h2>
+        </section>
+
+        <section class="principles-card">
+            <img class="card-img" src="images/w05_ice_image_person.jpg" alt="Person working on a design">
+            <img class="icon" src="images/w05_circles.jpg" alt="Design Icon">
+            <h2>Principles</h2>
+        </section>
+
+        <section class="audience-card">
+            <img class="card-img" src="images/w05_circles.jpg" alt="Abstract design">
+            <img class="icon" src="images/w05_circles.jpg" alt="Web Icon">
+            <h2>Audience</h2>
+        </section>
+
+        <div id="background"></div>
+
+        <img class="design" src="images/w05_ice_image_graphic.png" alt="Graphic Design">
+
+        <section class="msg">
+            <h2>Good Web Design is More Than Just Aesthetics</h2>
+            <p>It’s about creating a seamless user experience that guides and engages visitors.</p>
+            <a class='join' href="#">Get Started</a>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-text">W05 ICE Challenge &copy; 2025 | Web Design</p>
+        <p><a class="footer-link" href="#">Site Plan</a></p>
+        <p><a class="footer-link" href="#">Contact</a></p>
+
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
+
+
