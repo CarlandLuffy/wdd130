@@ -70,7 +70,7 @@ nav a:hover {
 }
 
 #hero {
-    margin-top: -150px; /* This can allow the hero image to extend upward */
+    margin-top: -150px; 
     position: relative;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -82,7 +82,7 @@ nav a:hover {
   #hero-box {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
-    z-index: 2;  /* This puts the image behind the hero text but below header */
+    z-index: 2;  
   }
   
   #hero-msg {
@@ -92,8 +92,8 @@ nav a:hover {
     justify-self: center;
     text-align: center;
     color: white;
-    margin-top: 200px;  /* This ensures the text sits above the hero image */
-    z-index: 3;  /* This puts the text above the image */
+    margin-top: 200px; 
+    z-index: 3;  
 }
 
   
@@ -103,11 +103,11 @@ nav a:hover {
   
   #hero-img {
     width: 100%;
-    max-width: none;       /* Remove the maximum width constraint */
+    max-width: none;       
     display: block;
-    object-fit: cover;     /* Ensures the image covers the container without distortion */
-    object-position: right;/* Focuses the image on the right side */
-    height : 90vh;        /* This ensures the image fills the height of the container */
+    object-fit: cover;    
+    object-position: right;
+    height : 90vh;       
 }
   
   
@@ -214,11 +214,11 @@ nav a:hover {
 
 
 
-/* Push the h2 text down so it appears below the icon */
+
 .rivers-card h2,
 .camping-card h2,
 .rapids-card h2 {
-  margin-top: 80px;    /* Adjust the value until it sits nicely under the icon */
+  margin-top: 80px;
   text-align: center;
 }
 
