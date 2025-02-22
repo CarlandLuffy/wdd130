@@ -60,12 +60,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
-
 #hero {
     position: relative;
-    width: 100%;
-    text-align: center;
-    display: flex;
+    display: grid;
+    grid template-columns: 1fr 3fr  1fr;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -191,6 +189,14 @@ nav a:hover {
     width: 80px;
 }
 
+{
+.rivers-card h2, 
+.camping-card h2,
+.rapids-card h2 
+  margin-top: 80px;    /* Adjust the value until it sits nicely under the icon */
+  text-align: center;
+}
+
 
 #background {
     height: 800px;
@@ -248,14 +254,6 @@ main section img {
 }
 
 
-.mountains {
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
-    display: block;
-    position: relative;
-    left: -500px; 
-}
 
 
 
