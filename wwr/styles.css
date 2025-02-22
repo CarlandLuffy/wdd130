@@ -30,17 +30,26 @@ h2 {
 
 header {
     background-color: #5a5f50;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px 20px;
-    width: 100%;
-    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 150px auto;
+    position: relative;
+    z-index: 4;
+    background-color: transparent;
 }
 
-#logo_link {
-    padding: 5px;
+
+nav {
+    display: flex;
+    justify-content: space-around;
 }
+             
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+             
 
 .logo {
     display: block;
@@ -61,30 +70,55 @@ nav a:hover {
 }
 
 #hero {
+    margin-top: -150px; /* This can allow the hero image to extend upward */
     position: relative;
     display: grid;
-    grid template-columns: 1fr 3fr  1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-}
-#hero-msg {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  }
+  
+  #hero-box {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    z-index: 2;  /* This puts the image behind the hero text but below header */
+  }
+  
+  #hero-msg {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: start;
+    justify-self: center;
     text-align: center;
     color: white;
-    width: 100%;
+    margin-top: 200px;  /* This ensures the text sits above the hero image */
+    z-index: 3;  /* This puts the text above the image */
 }
 
-
-#hero-img {
+  
+  
+  
+  
+  
+  #hero-img {
     width: 100%;
-    max-width: 1400px;
+    max-width: none;       /* Remove the maximum width constraint */
     display: block;
+    object-fit: cover;     /* Ensures the image covers the container without distortion */
+    object-position: right;/* Focuses the image on the right side */
+    height : 90vh;        /* This ensures the image fills the height of the container */
 }
-
+  
+  
+  
+  #hero-msg h4 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 30px; 
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  }
+  
 
 .home-title {
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
@@ -123,7 +157,7 @@ nav a:hover {
 
 .join:hover {
     background-color: #B08968; 
-    color: white; /
+    color: white; 
 }
 
 
@@ -158,78 +192,103 @@ nav a:hover {
 
 
 .home-grid {
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     margin: 20px auto;
     width: 80%;
+    grid-template-columns: repeat(10, 1fr);
 }
 
 
-.rivers-card, .camping-card, .rapids-card {
+.rivers-card, .camping-card, .rapids-card  {
     text-align: center;
     position: relative;
-    max-width: 600px;
+    width: 100%;
     margin: 300px 0;
-    top: 50%;
+    top: -15%;
+}
+
+
+
+
+
+/* Push the h2 text down so it appears below the icon */
+.rivers-card h2,
+.camping-card h2,
+.rapids-card h2 {
+  margin-top: 80px;    /* Adjust the value until it sits nicely under the icon */
+  text-align: center;
 }
 
 
 .card-img {
-    border: 10px solid #DEB887; 
-    box-sizing: border-box; 
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    box-sizing: border-box;
 }
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+             
+
 
 
 .icon {
     position: absolute;
-    top: 80%;
+    top: 90%;
     transform: translateY(-50%);
     width: 80px;
 }
 
-{
-.rivers-card h2, 
-.camping-card h2,
-.rapids-card h2 
-  margin-top: 80px;    /* Adjust the value until it sits nicely under the icon */
-  text-align: center;
-}
+
 
 
 #background {
     height: 800px;
     background-color: #c7a785;
     width: 100%;
+    grid-column: 1/11;
+    grid-row: 4/9;
+
 }
+
 
 
 .msg {
-    background-color: #5a5f50;
-    color: white;
+    background-color: #6f7364;
     padding: 35px;
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 10px;
-    line-height: 1.5em;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
 }
+.mountains {
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+             
+
 
 .msg p {
     padding-bottom: 15px;
 }
 
 
+
 footer {
-    background-color: #5a5f50;
-    color: burlywood;
-    text-align: left;
+    background-color: #6f7364;
     padding: 25px 50px;
-    margin-top: 200px;
-
-
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-
+         
 footer a {
     color:burlywood;
     text-decoration: none;
@@ -260,8 +319,10 @@ main section img {
 .rivers-card {
     text-align: center;
     position: relative;
-    max-width: 600px;
+    width: 100%;
     padding-top: 200px; 
+    grid-column: 2/4;
+    grid-row: 2/3;
 }
 
 #hero-msg h4 {
@@ -277,3 +338,67 @@ main section img {
     margin-top: -50px; 
 }
 
+.camping-card
+{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding-top: 200px; 
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+
+.rapids-card {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding-top: 200px; 
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    #hero-msg h1 {
+        color: #6f7364;
+    }
+    .home-title {
+        font-size: 25px;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
+            
