@@ -6,13 +6,13 @@
 }
 
 body {
-  background-color: #f8f8f8;
-  color: #333;
+  background-color: goldenrod;
+  color: rgb(185, 245, 245);
   text-align: center;
 }
 
 header {
-  background-color: #fff;
+  background-color: royalblue;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -94,17 +94,19 @@ nav ul li a:hover {
     height: 100%;
     backface-visibility: hidden;
     border-radius: 10px;
+    color: blue;
   }
   
   /* Back side rotated */
   .flip-card-back {
     transform: rotateY(180deg);
-    background-color: #f0f0f0;
+    background-color: burlywood;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+  
   
 .content {
   display: flex;
@@ -156,8 +158,8 @@ button:hover {
 }
 
 footer {
-  background-color: #222;
-  color: white;
+  background-color: burlywood;
+  color: blueviolet;
   padding: 20px 10%;
   display: flex;
   justify-content: space-between;
@@ -170,7 +172,7 @@ footer {
 }
 
 .footer-center a {
-  color: white;
+  color: royalblue;
   text-decoration: none;
   margin: 0 10px;
   font-size: 14px;
@@ -188,7 +190,7 @@ footer {
   transform: rotate3d(1, 1, 1, 20deg);
 }
 .footer-center a:hover {
-  color: #ff5733;
+  color: blue;
 }
 
 .footer-right img {
@@ -200,7 +202,6 @@ footer p {
   margin-top: 10px;
   font-size: 12px;
 }
-
 .page2 * {
   margin: 0;
   padding: 0;
@@ -209,8 +210,8 @@ footer p {
 }
 
 .page2 body {
-  background-color: #f8f8f8;
-  color: #333;
+  background-color: red; /* Light gray background */
+  color: pink; /* Dark gray text */
   text-align: center;
 }
 
@@ -219,7 +220,8 @@ footer p {
   align-items: center;
   justify-content: center;
   padding: 40px;
-  background-color: #e0e0e0;
+  background-color: #6ed3cf; /* Teal background */
+  color: black; /* White text */
 }
 
 .page2 .hero-content {
@@ -239,7 +241,7 @@ footer p {
 }
 
 .page2 .sub-nav {
-  background-color: #ccc;
+  background-color: #9068be; /* Purple background */
   padding: 15px;
   text-align: center;
 }
@@ -255,7 +257,8 @@ footer p {
   font-size: 16px;
   font-weight: bold;
   padding: 10px;
-  background-color: #ddd;
+  background-color: #8e44ad; /* Darker purple */
+  color: red; /* White text */
   border-radius: 5px;
 }
 
@@ -266,7 +269,7 @@ footer p {
 }
 
 .page2 .testimonial {
-  background-color: #fff;
+  background-color: palevioletred; /* Gainsboro gray */
   padding: 20px;
   border-radius: 10px;
   width: 30%;
@@ -281,7 +284,7 @@ footer p {
 }
 
 .page2 .grid-box {
-  background-color: #ddd;
+  background-color: teal; /* Light blue-gray */
   padding: 20px;
   border-radius: 5px;
   text-align: center;
@@ -302,6 +305,9 @@ footer p {
 .page2 .image-text .text {
   max-width: 500px;
   text-align: left;
+  background-color: burlywood; /* Light gray */
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .page2 .icons {
@@ -313,10 +319,13 @@ footer p {
 
 .page2 .icons img {
   width: 50px;
+  background-color: #6ed3cf; /* Teal */
+  border-radius: 10px;
 }
 
 .page2 .text-block {
   padding: 20px 10%;
+  background-color: burlywood; /* Gainsboro gray */
 }
 
 .page2 .buttons {
@@ -329,16 +338,17 @@ footer p {
 .page2 .buttons button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #ff5733;
-  color: white;
+  background-color: rosybrown; /* Red-orange */
+  color: #ffffff; /* White text */
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .page2 .buttons button:hover {
-  background-color: #e04e2a;
+  background-color:  royalblue; /* Darker red-orange */
 }
+
 
 .page3 * {
   margin: 0;
