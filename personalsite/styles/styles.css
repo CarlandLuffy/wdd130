@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  position: absolute; /* Pins it to the top of the page */
+  position: absolute; 
   top: 0;
   left: 0;
   right: 0;
@@ -24,7 +24,7 @@ header {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 999; /* ensures it stays on top of everything */
+  z-index: 999; 
 }
 
 
@@ -57,7 +57,7 @@ nav ul li a:hover {
   max-width: 600px;
   border-radius: 10px;
 }
-/* Center the hero image */
+
 .hero {
     display: flex;
     justify-content: center;
@@ -82,18 +82,18 @@ nav ul li a:hover {
     margin: 0;
   }
   
-  /* Flip card container */
+
   .flip-card {
     background-color: transparent;
     width: 80%;
     max-width: 600px;
     height: 400px;
-    margin: 0 auto; /* center horizontally */
+    margin: 0 auto; 
     perspective: 1000px;
     margin-top: 100px;
   }
   
-  /* Flip card inner container */
+
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -102,13 +102,12 @@ nav ul li a:hover {
     transition: transform 0.6s;
     transform-style: preserve-3d;
   }
-  
-  /* Flip effect on hover */
+
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
   
-  /* Front and back card styling */
+ 
   .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -118,7 +117,7 @@ nav ul li a:hover {
     color: blue;
   }
   
-  /* Back side rotated */
+
   .flip-card-back {
     transform: rotateY(180deg);
     background-color: burlywood;
@@ -174,7 +173,7 @@ button:hover {
 button {
   display: inline-block;
   margin-top: 15px;
-  margin-left: 0; /* NEW: push it to the far left */
+  margin-left: 0; 
   padding: 10px 20px;
   background-color: #ff5733;
   color: white;
@@ -193,28 +192,22 @@ button {
 
 footer {
   background-color: burlywood;
-  color: blueviolet;
-  padding: 20px 10%;
+  padding: 10px 5%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
+  text-align: center;
+  gap: 6px;
+  font-size: 13px;
 }
 
-.footer-left img {
-  width: 60px;
+
+.footer-left,
+.footer-center,
+.footer-right {
+  margin-bottom: 5px;
 }
 
-.footer-center a {
-  color: #ff5733; /* strong contrast and fits your palette */
-  text-decoration: none;
-  margin: 0 10px;
-  font-size: 14px;
-}
-
-.footer-center a:visited {
-  color: #ff5733; /* prevents default purple */
-}
 
 .logo-title-footer {
   display: flex;
@@ -223,43 +216,44 @@ footer {
 }
 
 .logo-title-footer img {
-  width: 100px;
+  width: 200px;
   height: auto;
 }
 
 .logo-title-footer h2 {
-  color: blueviolet;
-  font-size: 20px;
+  color: #43A047;
+  font-size: 50px;
   margin: 0;
 }
 
-.bottom-left img {
-  width: 300px;
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 5px;
-  margin-top: 20px;
-  transition: transform 0.5s;
+
+footer a {
+  color: #1E88E5;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0 8px;
 }
 
-.bottom-left img:hover {
-  transform: scale(1.1) rotate3d(1, 1, 1, 20deg);
+footer a:hover {
+  text-decoration: underline;
 }
 
 
-.footer-center a:hover {
-  color: blueviolet; /* playful and stylish contrast */
-}
-
-.footer-right img {
-  width: 20px;
-  margin-left: 10px;
+footer img {
+  width: 24px;
+  margin: 0 6px;
 }
 
 footer p {
   margin-top: 10px;
   font-size: 12px;
 }
-.page2 * {
+
+
+
+
+
+* .page2 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -267,18 +261,35 @@ footer p {
 }
 
 .page2 body {
-  background-color: red; /* Light gray background */
-  color: pink; /* Dark gray text */
+  background-color: #f8f8f8;
+  color: #333;
   text-align: center;
 }
+
+
+
+.page2 main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page2 {
+  background-color: goldenrod; 
+  color: rgb(185, 245, 245);
+  text-align: center;
+  padding-top: 100px;
+}
+
 
 .page2 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px;
-  background-color: #6ed3cf; /* Teal background */
-  color: black; /* White text */
+  background-color: #1E88E5;
+  color: #ffffff;
+  flex-wrap: wrap;
 }
 
 .page2 .hero-content {
@@ -290,15 +301,17 @@ footer p {
   width: 200px;
   border-radius: 10px;
   margin-right: 20px;
+  float: left;
 }
 
 .page2 .hero-content p {
   font-size: 18px;
   margin: 10px 0;
+  overflow: hidden;
 }
 
 .page2 .sub-nav {
-  background-color: #9068be; /* Purple background */
+  background-color: #1E88E5;
   padding: 15px;
   text-align: center;
 }
@@ -307,6 +320,7 @@ footer p {
   list-style: none;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -314,34 +328,39 @@ footer p {
   font-size: 16px;
   font-weight: bold;
   padding: 10px;
-  background-color: #8e44ad; /* Darker purple */
-  color: red; /* White text */
+  background-color: #43A047;
+  color: #ffffff;
   border-radius: 5px;
 }
 
 .page2 .testimonials {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
   padding: 40px 10%;
 }
 
 .page2 .testimonial {
-  background-color: palevioletred; /* Gainsboro gray */
+  background-color: #43A047;
+  color: #ffffff;
   padding: 20px;
   border-radius: 10px;
   width: 30%;
+  min-width: 280px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .page2 .grid-content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   padding: 20px 10%;
 }
 
 .page2 .grid-box {
-  background-color: teal; /* Light blue-gray */
+  background-color: #1E88E5;
+  color: #ffffff;
   padding: 20px;
   border-radius: 5px;
   text-align: center;
@@ -349,44 +368,52 @@ footer p {
 
 .page2 .image-text {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
   padding: 40px 10%;
 }
 
 .page2 .image-text .image img {
-  width: 250px;
+  max-width: 250px;
+  width: 100%;
   border-radius: 5px;
 }
 
 .page2 .image-text .text {
   max-width: 500px;
   text-align: left;
-  background-color: burlywood; /* Light gray */
+  background-color: #43A047;
+  color: #ffffff;
   padding: 20px;
   border-radius: 5px;
 }
 
-.page2 .icons {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 40px 0;
+.page2 .icons img {
+  width: 200px;
+  height: auto;
+  background-color: #1E88E5;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
-.page2 .icons img {
-  width: 50px;
-  background-color: #6ed3cf; /* Teal */
-  border-radius: 10px;
+.page2 .icons img:hover {
+  transform: scale(1.05);
 }
+
 
 .page2 .text-block {
   padding: 20px 10%;
-  background-color: burlywood; /* Gainsboro gray */
+  background-color: #43A047;
+  color: #ffffff;
 }
+
 
 .page2 .buttons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   padding: 20px 0;
@@ -395,83 +422,179 @@ footer p {
 .page2 .buttons button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: rosybrown; /* Red-orange */
-  color: #ffffff; /* White text */
+  background-color: #1E88E5;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .page2 .buttons button:hover {
-  background-color:  royalblue; /* Darker red-orange */
+  background-color: #1565C0;
 }
 
-.page2.logo-title {
+.page2 .logo-title {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.page2.logo-title img {
-  width: 150px;
+.page2 .logo-title img {
+  width: 120px;
   height: auto;
 }
 
-.page2.logo-title h1 {
+.page2 .logo-title h1 {
   color: white;
-  font-size: 32px;
-  margin: 0;
+  font-size: 28px;
+}
+.page2 footer {
+  background-color: burlywood;
+  padding: 10px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  font-size: 13px;
 }
 
-.page2.logo-title-footer {
+
+.page2 .footer-left,
+.page2 .footer-center,
+.page2 .footer-right {
+  margin-bottom: 5px;
+}
+
+
+.page2 .logo-title-footer {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.page2.logo-title-footer img {
-  width: 100px;
+.page2 .logo-title-footer img {
+  width: 200px; 
   height: auto;
 }
 
-.page2.logo-title-footer h2 {
-  color: blueviolet;
-  font-size: 20px;
+.page2 .logo-title-footer h2 {
+  color: #43A047;
+  font-size: 50px; 
   margin: 0;
 }
 
-.page3 * {
+
+
+.page2 footer a {
+  color: #1E88E5;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0 8px;
+}
+
+.page2 footer a:hover {
+  text-decoration: underline;
+}
+
+
+.page2 footer img {
+  width: 24px;
+  margin: 0 6px;
+}
+
+
+
+.page3 header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0 50px 15px 50px;
+  background-color: royalblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.page3 .logo-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.page3 .logo-title img {
+  width: 150px;
+  height: auto;
+}
+
+.page3 .logo-title h1 {
+  color: white;
+  font-size: 32px;
+  margin: 0;
+}
+.page3 .logo-title h1 {
+  color: white;
+  font-size: 32px;
+  margin: 0;
+}
+
+
+.page3 nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.page3 nav ul li {
+  margin: 0 20px;
+}
+
+.page3 nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.page3 nav ul li a:hover {
+  color: #ff5733;
+}
+
+* .page3 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-
 .page3 body {
-  background-color: #f8f8f8;
-  color: #333;
+  background-color: #ffffff;
+  color: #111111;
   text-align: center;
 }
 
+
 .page3 .contact-box {
-  background-color: #bbb;
+  background-color: #f1f5f9;
   padding: 20px;
   width: 60%;
-  margin: 40px auto;
+  margin: 120px auto 40px auto;
   border-radius: 5px;
   text-align: center;
 }
 
 .page3 .contact-box p {
   font-size: 18px;
-  color: #000;
+  color: #111111;
 }
 
 .page3 .contact-box button {
   margin-top: 10px;
   padding: 10px 15px;
   font-size: 16px;
-  background-color: #555;
+  background-color: #0055aa;
   color: white;
   border: none;
   border-radius: 5px;
@@ -479,11 +602,12 @@ footer p {
 }
 
 .page3 .contact-box button:hover {
-  background-color: #444;
+  background-color: #003f7f;
 }
 
+
 .page3 .form-section {
-  background-color: #ddd;
+  background-color: #e2e8f0;
   padding: 30px;
   width: 80%;
   margin: 30px auto;
@@ -494,6 +618,7 @@ footer p {
 .page3 .form-section p {
   font-size: 18px;
   margin-bottom: 10px;
+  color: #111111;
 }
 
 .page3 .form-section select {
@@ -501,8 +626,11 @@ footer p {
   padding: 8px;
   font-size: 16px;
   border-radius: 5px;
-  border: 1px solid #888;
+  border: 1px solid #0055aa;
+  color: #111111;
+  background-color: #ffffff;
 }
+
 
 .page3 .text-columns {
   display: flex;
@@ -510,22 +638,26 @@ footer p {
   gap: 50px;
   padding: 40px 10%;
   text-align: left;
+  margin-left: 100px;
 }
 
 .page3 .text-columns .column {
   width: 45%;
   font-size: 16px;
   line-height: 1.5;
+  margin-left: 100px;
+  color: #111111;
 }
 
+
 .page3 .bottom-button {
-  padding: 30px;
+  margin-bottom: 110px;
 }
 
 .page3 .bottom-button button {
   padding: 12px 25px;
   font-size: 18px;
-  background-color: #333;
+  background-color: #0055aa;
   color: white;
   border: none;
   border-radius: 5px;
@@ -533,5 +665,71 @@ footer p {
 }
 
 .page3 .bottom-button button:hover {
-  background-color: #222;
+  background-color: #003f7f;
 }
+
+.page3 footer {
+  background-color: burlywood;
+  padding: 10px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  font-size: 13px;
+  margin-top: auto; 
+  padding-top : 60px; 
+}
+
+
+.page3 .footer-left,
+.page3 .footer-center,
+.page3 .footer-right {
+  margin-bottom: 5px;
+}
+
+
+.page3 .logo-title-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page3 .logo-title-footer img {
+  width: 200px; 
+  height: auto;
+}
+
+.page3 .logo-title-footer h2 {
+  color: #43A047;
+  font-size: 50px; 
+  margin: 0;
+}
+
+
+
+.page3 footer a {
+  color: #1E88E5;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0 8px;
+}
+
+.page3 footer a:hover {
+  text-decoration: underline;
+}
+
+
+.page3 footer img {
+  width: 24px;
+  margin: 0 6px;
+}
+
+.page3 {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
