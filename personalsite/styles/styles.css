@@ -504,8 +504,6 @@ footer p {
   margin: 0 6px;
 }
 
-
-
 .page3 header {
   position: absolute;
   top: 0;
@@ -537,12 +535,6 @@ footer p {
   font-size: 32px;
   margin: 0;
 }
-.page3 .logo-title h1 {
-  color: white;
-  font-size: 32px;
-  margin: 0;
-}
-
 
 .page3 nav ul {
   list-style: none;
@@ -569,18 +561,18 @@ footer p {
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+
 .page3 body {
   background-color: #ffffff;
   color: #111111;
   text-align: center;
 }
 
-
 .page3 .contact-box {
   background-color: #f1f5f9;
   padding: 20px;
   width: 60%;
-  margin: 120px auto 40px auto;
+  margin: 220px auto 60px auto;
   border-radius: 5px;
   text-align: center;
 }
@@ -605,12 +597,11 @@ footer p {
   background-color: #003f7f;
 }
 
-
 .page3 .form-section {
   background-color: #e2e8f0;
   padding: 30px;
   width: 80%;
-  margin: 30px auto;
+  margin: 80px auto;
   border-radius: 5px;
   text-align: center;
 }
@@ -631,26 +622,23 @@ footer p {
   background-color: #ffffff;
 }
 
-
 .page3 .text-columns {
   display: flex;
   justify-content: center;
   gap: 50px;
-  padding: 40px 10%;
+  padding: 80px 10%;
   text-align: left;
-  margin-left: 100px;
 }
 
 .page3 .text-columns .column {
   width: 45%;
   font-size: 16px;
   line-height: 1.5;
-  margin-left: 100px;
   color: #111111;
 }
 
-
 .page3 .bottom-button {
+  margin-top: 60px;
   margin-bottom: 110px;
 }
 
@@ -677,17 +665,15 @@ footer p {
   text-align: center;
   gap: 6px;
   font-size: 13px;
-  margin-top: auto; 
-  padding-top : 60px; 
+  margin-top: auto;
+  padding-top: 80px;
 }
-
 
 .page3 .footer-left,
 .page3 .footer-center,
 .page3 .footer-right {
   margin-bottom: 5px;
 }
-
 
 .page3 .logo-title-footer {
   display: flex;
@@ -696,17 +682,15 @@ footer p {
 }
 
 .page3 .logo-title-footer img {
-  width: 200px; 
+  width: 200px;
   height: auto;
 }
 
 .page3 .logo-title-footer h2 {
   color: #43A047;
-  font-size: 50px; 
+  font-size: 50px;
   margin: 0;
 }
-
-
 
 .page3 footer a {
   color: #1E88E5;
@@ -719,7 +703,6 @@ footer p {
   text-decoration: underline;
 }
 
-
 .page3 footer img {
   width: 24px;
   margin: 0 6px;
@@ -730,6 +713,3 @@ footer p {
   display: flex;
   flex-direction: column;
 }
-
-
-
