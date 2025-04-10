@@ -1,23 +1,32 @@
+/* General Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+
+html, body {
+  height: 100%;
+}
+
 body {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 120px 0 0 0; /* Pushes everything below the header */
   background-color: goldenrod;
   color: rgb(185, 245, 245);
   text-align: center;
+  font-size: 18px; /* Larger base font size */
 }
 
+/* Header Styles */
 header {
   position: absolute; 
   top: 0;
   left: 0;
   right: 0;
-  margin: 0;
   padding: 0 50px 15px 50px;
   background-color: royalblue;
   display: flex;
@@ -26,7 +35,6 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 999; 
 }
-
 
 nav ul {
   list-style: none;
@@ -47,9 +55,14 @@ nav ul li a:hover {
   color: #ff5733;
 }
 
+/* Hero Section */
 .hero {
   background-color: #e0e0e0;
   padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
 }
 
 .hero img {
@@ -58,81 +71,72 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0;
-  }
-  
-  .logo-title {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .logo-title img {
-    width: 150px;
-    height: auto;
-  }
-  
-  .logo-title h1 {
-    color: white;
-    font-size: 32px;
-    margin: 0;
-  }
-  
+/* Logo Title */
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 
-  .flip-card {
-    background-color: transparent;
-    width: 80%;
-    max-width: 600px;
-    height: 400px;
-    margin: 0 auto; 
-    perspective: 1000px;
-    margin-top: 100px;
-  }
-  
+.logo-title img {
+  width: 150px;
+  height: auto;
+}
 
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-  }
+.logo-title h1 {
+  color: white;
+  font-size: 32px;
+  margin: 0;
+}
 
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
- 
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    color: blue;
-  }
-  
+/* Flip Card */
+.flip-card {
+  background-color: transparent;
+  width: 80%;
+  max-width: 600px;
+  height: 400px;
+  margin: 100px auto 0 auto;
+  perspective: 1000px;
+}
 
-  .flip-card-back {
-    transform: rotateY(180deg);
-    background-color: burlywood;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  color: blue;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Content Section */
 .content {
   display: flex;
   justify-content: space-between;
   padding: 40px 10%;
   text-align: left;
+  font-size: 18px;
 }
 
 .left {
@@ -148,13 +152,18 @@ nav ul li a:hover {
   margin-left: 40px;
 }
 
-
 .right img {
   width: 100%;
   max-width: 200px;
   border-radius: 5px;
 }
 
+.bottom-left img {
+  width: 300px;
+  border-radius: 5px;
+}
+
+/* Buttons */
 button {
   display: inline-block;
   margin-top: 15px;
@@ -170,26 +179,8 @@ button {
 button:hover {
   background-color: #e04e2a;
 }
-button {
-  display: inline-block;
-  margin-top: 15px;
-  margin-left: 0; 
-  padding: 10px 20px;
-  background-color: #ff5733;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
 
-
-
-.bottom-left img {
-  width: 300px;
-  border-radius: 5px;
-}
-
+/* Footer */
 footer {
   background-color: burlywood;
   padding: 10px 5%;
@@ -198,16 +189,15 @@ footer {
   align-items: center;
   text-align: center;
   gap: 6px;
-  font-size: 13px;
+  font-size: 14px;
+  margin-top: auto; /* Keeps it at the bottom */
 }
-
 
 .footer-left,
 .footer-center,
 .footer-right {
   margin-bottom: 5px;
 }
-
 
 .logo-title-footer {
   display: flex;
@@ -226,7 +216,6 @@ footer {
   margin: 0;
 }
 
-
 footer a {
   color: #1E88E5;
   text-decoration: none;
@@ -238,7 +227,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-
 footer img {
   width: 24px;
   margin: 0 6px;
@@ -248,6 +236,7 @@ footer p {
   margin-top: 10px;
   font-size: 12px;
 }
+
 
 
 
